@@ -148,9 +148,9 @@ function FuturisticAiVisualizer({ mousePos }) {
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none z-0" />
 
       {/* Floating Glass Panel 1: Live AI System Status (Top Right) */}
-      <div className="absolute top-6 right-6 lg:top-8 lg:right-8 z-10">
+      <div className="absolute top-2 right-2 sm:top-6 sm:right-6 lg:top-8 lg:right-8 z-10 max-w-[calc(100%-16px)] sm:max-w-none">
         <div
-          className="glass-panel p-4 rounded-2xl border border-cyan-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
+          className="glass-panel p-3 sm:p-4 rounded-2xl border border-cyan-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
           style={{
             transform: `translate3d(${(mousePos.x - window.innerWidth / 2) * 0.012}px, ${(mousePos.y - window.innerHeight / 2) * 0.012}px, 0)`
           }}
@@ -182,9 +182,9 @@ function FuturisticAiVisualizer({ mousePos }) {
       </div>
 
       {/* Floating Glass Panel 2: Intelligent Code Pipeline (Bottom Left) */}
-      <div className="absolute bottom-6 left-6 lg:bottom-8 lg:left-8 z-10 max-w-[270px]">
+      <div className="absolute bottom-2 left-2 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 z-10 w-[calc(100%-16px)] max-w-[260px] sm:max-w-[270px]">
         <div
-          className="glass-panel p-4 rounded-2xl border border-purple-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
+          className="glass-panel p-3 sm:p-4 rounded-2xl border border-purple-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
           style={{
             transform: `translate3d(${(mousePos.x - window.innerWidth / 2) * -0.01}px, ${(mousePos.y - window.innerHeight / 2) * -0.01}px, 0)`
           }}
@@ -210,9 +210,9 @@ function FuturisticAiVisualizer({ mousePos }) {
       </div>
 
       {/* Center Interactive Core Badge */}
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 max-w-[230px] w-full">
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[calc(100%-32px)] max-w-[230px]">
         <div
-          className="p-6 rounded-3xl bg-gradient-to-br from-[#0f172a]/90 via-[#0b0f17]/90 to-[#1e1b4b]/80 border border-white/15 shadow-2xl backdrop-blur-2xl text-center space-y-3 transition-transform duration-500 hover:border-cyan-400/40"
+          className="p-4 sm:p-6 rounded-3xl bg-gradient-to-br from-[#0f172a]/90 via-[#0b0f17]/90 to-[#1e1b4b]/80 border border-white/15 shadow-2xl backdrop-blur-2xl text-center space-y-3 transition-transform duration-500 hover:border-cyan-400/40"
           style={{
             transform: `translate3d(${(mousePos.x - window.innerWidth / 2) * 0.015}px, ${(mousePos.y - window.innerHeight / 2) * 0.015}px, 0)`
           }}
@@ -256,22 +256,13 @@ export default function Hero({ _onOpenAiBot, _onOpenResume }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
 
-        {/* Top Personal Engineering Tagline Badge */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-xl text-slate-300">
-            <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
-            <span className="text-xs font-mono tracking-wide text-slate-300">
-              {PERSONAL_INFO.signatureTagline}
-            </span>
-          </div>
-
-          <div className="flex items-center gap-3 text-xs font-mono">
-            <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5" /> NAVTTC MERN Grade A+
-            </span>
-            <span className="text-slate-500 hidden sm:inline">•</span>
-            <span className="text-slate-400 hidden sm:inline">UMT Software Engineering</span>
-          </div>
+        {/* Top Badges */}
+        <div className="flex flex-wrap items-center gap-3 mb-6 sm:mb-8">
+          <span className="px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1.5 text-xs font-mono shrink-0">
+            <ShieldCheck className="w-3.5 h-3.5" /> NAVTTC MERN Grade A+
+          </span>
+          <span className="text-slate-500 hidden sm:inline text-xs font-mono">•</span>
+          <span className="text-slate-400 text-xs font-mono">UMT Software Engineering</span>
         </div>
 
         {/* Cinematic Grid Layout */}
@@ -286,11 +277,11 @@ export default function Hero({ _onOpenAiBot, _onOpenResume }) {
                 <span>Software Engineer Portfolio</span>
               </div>
 
-              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-display font-black tracking-tight text-white leading-[1.05]">
+              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-display font-black tracking-tight text-white leading-[1.1] sm:leading-[1.05] break-words">
                 <span className="shimmer-text">Areeba Amar</span>
               </h1>
 
-              <p className="text-xl sm:text-2xl font-display font-bold text-cyan-400 tracking-tight">
+              <p className="text-lg sm:text-2xl font-display font-bold text-cyan-400 tracking-tight leading-snug">
                 Software Engineer | Applied AI & Full-Stack Development
               </p>
             </div>
@@ -300,11 +291,21 @@ export default function Hero({ _onOpenAiBot, _onOpenResume }) {
               Building AI-powered applications, scalable web solutions, and intelligent automation through practical software engineering.
             </p>
 
+            {/* Brand Values Pills */}
+            <div className="flex flex-wrap gap-x-5 gap-y-3 text-xs font-mono text-slate-400">
+              {BRAND_VALUES.map((val, idx) => (
+                <div key={idx} className="flex items-center gap-1.5 text-slate-300">
+                  <span className="text-cyan-400">✓</span>
+                  <span className="font-semibold">{val.label}</span>
+                </div>
+              ))}
+            </div>
+
             {/* Primary & Secondary Action Buttons */}
-            <div className="pt-2 flex flex-wrap items-center gap-4 sm:gap-5">
+            <div className="pt-2 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4 sm:gap-5 w-full">
               <a
                 href="#projects"
-                className="relative group inline-flex items-center gap-3 px-7 py-3.5 rounded-2xl bg-white/[0.08] hover:bg-white/[0.14] border border-white/15 text-white font-display font-semibold text-sm transition-all duration-300 hover:scale-[1.02] shadow-xl focus-visible:ring-2 focus-visible:ring-cyan-400"
+                className="relative group inline-flex justify-center items-center gap-3 px-7 py-3.5 rounded-2xl bg-white/[0.08] hover:bg-white/[0.14] border border-white/15 text-white font-display font-semibold text-sm transition-all duration-300 hover:scale-[1.02] shadow-xl focus-visible:ring-2 focus-visible:ring-cyan-400 w-full sm:w-auto"
               >
                 <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4 text-cyan-400 group-hover:translate-x-1 transition-transform" />
@@ -315,7 +316,7 @@ export default function Hero({ _onOpenAiBot, _onOpenResume }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download Resume"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-slate-300 hover:text-white font-display font-medium text-sm backdrop-blur-xl transition-all duration-300 focus-visible:ring-2 focus-visible:ring-cyan-400"
+                className="inline-flex justify-center items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-slate-300 hover:text-white font-display font-medium text-sm backdrop-blur-xl transition-all duration-300 focus-visible:ring-2 focus-visible:ring-cyan-400 w-full sm:w-auto"
               >
                 <FileText className="w-4 h-4 text-slate-400" />
                 <span>Download Resume</span>
@@ -326,21 +327,11 @@ export default function Hero({ _onOpenAiBot, _onOpenResume }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open LinkedIn Profile"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-slate-300 hover:text-white font-display font-medium text-sm backdrop-blur-xl transition-all duration-300 focus-visible:ring-2 focus-visible:ring-cyan-400"
+                className="inline-flex justify-center items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-slate-300 hover:text-white font-display font-medium text-sm backdrop-blur-xl transition-all duration-300 focus-visible:ring-2 focus-visible:ring-cyan-400 w-full sm:w-auto"
               >
                 <LinkedinIcon className="w-4 h-4 text-slate-400" />
                 <span>LinkedIn</span>
               </a>
-            </div>
-
-            {/* Brand Values Pills */}
-            <div className="pt-6 border-t border-white/10 flex flex-wrap gap-4 text-xs font-mono text-slate-400">
-              {BRAND_VALUES.map((val, idx) => (
-                <div key={idx} className="flex items-center gap-1.5 text-slate-300">
-                  <span className="text-cyan-400">✓</span>
-                  <span className="font-semibold">{val.label}</span>
-                </div>
-              ))}
             </div>
 
           </div>

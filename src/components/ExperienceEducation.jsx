@@ -45,7 +45,7 @@ export default function ExperienceEducation() {
           <div className="lg:col-span-6 glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 space-y-6">
             <div className="flex items-center justify-between">
               <span className="px-3 py-1 rounded-full text-xs font-mono bg-white/[0.04] border border-white/10 text-slate-300">
-                2023 – 2027 (7th Semester)
+                2023 – 2027
               </span>
               <span className="text-xs font-mono text-slate-500">Lahore, Pakistan</span>
             </div>
