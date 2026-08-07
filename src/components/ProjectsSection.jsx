@@ -12,8 +12,8 @@ function ProjectVisualIdentity({ project, onOpenAiBot }) {
 
   if (id === 'areeba-bot') {
     return (
-      <div className="relative w-full h-full min-h-[360px] rounded-3xl bg-gradient-to-br from-cyan-950/40 via-indigo-950/30 to-[#030712] border border-cyan-500/30 p-6 flex flex-col justify-between overflow-hidden group">
-        <div className="flex items-center justify-between z-10">
+      <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-cyan-950/40 via-indigo-950/30 to-[#030712] border border-cyan-500/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden group">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 z-10">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono text-xs">
             <Sparkles className="w-3.5 h-3.5" />
             RAG Vector Database Architecture
@@ -57,8 +57,8 @@ function ProjectVisualIdentity({ project, onOpenAiBot }) {
 
   if (id === 'intelliroads') {
     return (
-      <div className="relative w-full h-full min-h-[360px] rounded-3xl bg-gradient-to-br from-emerald-950/40 via-teal-950/30 to-[#030712] border border-emerald-500/30 p-6 flex flex-col justify-between overflow-hidden group">
-        <div className="flex items-center justify-between z-10">
+      <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-emerald-950/40 via-teal-950/30 to-[#030712] border border-emerald-500/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden group">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 z-10">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs">
             <Activity className="w-3.5 h-3.5" />
             SUMO TraCI Traffic Grid
@@ -101,8 +101,8 @@ function ProjectVisualIdentity({ project, onOpenAiBot }) {
 
   if (id === 'student-performance') {
     return (
-      <div className="relative w-full h-full min-h-[360px] rounded-3xl bg-gradient-to-br from-fuchsia-950/40 via-purple-950/30 to-[#030712] border border-fuchsia-500/30 p-6 flex flex-col justify-between overflow-hidden group">
-        <div className="flex items-center justify-between z-10">
+      <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-fuchsia-950/40 via-purple-950/30 to-[#030712] border border-fuchsia-500/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden group">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 z-10">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/30 text-fuchsia-400 font-mono text-xs">
             <Cpu className="w-3.5 h-3.5 text-fuchsia-400" />
             Machine Learning Pipeline
@@ -144,8 +144,8 @@ function ProjectVisualIdentity({ project, onOpenAiBot }) {
 
   if (id === 'saucedemo-automation') {
     return (
-      <div className="relative w-full h-full min-h-[360px] rounded-3xl bg-gradient-to-br from-amber-950/40 via-orange-950/30 to-[#030712] border border-amber-500/30 p-6 flex flex-col justify-between overflow-hidden group">
-        <div className="flex items-center justify-between z-10">
+      <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-amber-950/40 via-orange-950/30 to-[#030712] border border-amber-500/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden group">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 z-10">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs">
             <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
             Selenium Java POM Suite
@@ -187,8 +187,8 @@ function ProjectVisualIdentity({ project, onOpenAiBot }) {
 
   if (id === 'rent-a-car') {
     return (
-      <div className="relative w-full h-full min-h-[360px] rounded-3xl bg-gradient-to-br from-indigo-950/40 via-blue-950/30 to-[#030712] border border-indigo-500/30 p-6 flex flex-col justify-between overflow-hidden group">
-        <div className="flex items-center justify-between z-10">
+      <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-950/40 via-blue-950/30 to-[#030712] border border-indigo-500/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden group">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 z-10">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 font-mono text-xs">
             <Layers className="w-3.5 h-3.5 text-indigo-400" />
             MERN Vehicle Rental Platform
@@ -230,8 +230,8 @@ function ProjectVisualIdentity({ project, onOpenAiBot }) {
 
   // Fallback / hci-bci-research
   return (
-    <div className="relative w-full h-full min-h-[360px] rounded-3xl bg-gradient-to-br from-violet-950/40 via-purple-950/30 to-[#030712] border border-violet-500/30 p-6 flex flex-col justify-between overflow-hidden group">
-      <div className="flex items-center justify-between z-10">
+    <div className="relative w-full h-full min-h-[300px] sm:min-h-[360px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-violet-950/40 via-purple-950/30 to-[#030712] border border-violet-500/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden group">
+      <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 z-10">
         <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-400 font-mono text-xs">
           <Activity className="w-3.5 h-3.5 text-violet-400" />
           Brain-Computer Interface
@@ -292,7 +292,7 @@ export default function ProjectsSection({ onOpenAiBot }) {
               <div
                 key={project.id}
                 id={`project-case-${project.id}`}
-                className={`glass-panel ${theme.glassClass || ''} p-8 sm:p-12 rounded-3xl border ${theme.cardBorder} transition-all duration-500 shadow-2xl relative group overflow-hidden`}
+                className={`glass-panel ${theme.glassClass || ''} p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl border ${theme.cardBorder} transition-all duration-500 shadow-2xl relative group overflow-hidden`}
               >
                 <div
                   className="absolute inset-0 pointer-events-none opacity-15 group-hover:opacity-25 transition-opacity duration-700"
@@ -366,16 +366,16 @@ export default function ProjectsSection({ onOpenAiBot }) {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="pt-4 flex flex-wrap items-center gap-4">
+                    <div className="pt-4 flex flex-wrap items-center gap-3 sm:gap-4">
                       {project.liveDemo && (
                         <a
                           href={project.liveDemo}
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`Open Live Demo for ${project.title} in a new tab`}
-                          className="px-5 py-2.5 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-mono text-xs font-semibold flex items-center gap-2 transition-all shadow-lg focus-visible:ring-2 focus-visible:ring-cyan-400"
+                          className="w-full sm:w-auto justify-center px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-mono text-[11px] sm:text-xs font-semibold flex items-center gap-2 transition-all shadow-lg focus-visible:ring-2 focus-visible:ring-cyan-400"
                         >
-                          <ExternalLink className="w-4 h-4 text-cyan-400" />
+                          <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-400" />
                           Live Demo
                         </a>
                       )}
@@ -386,9 +386,9 @@ export default function ProjectsSection({ onOpenAiBot }) {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label="Open AreebaBot Live Demo"
-                          className="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-cyan-300 font-mono text-xs font-semibold flex items-center gap-2 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400"
+                          className="w-full sm:w-auto justify-center px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-cyan-300 font-mono text-[11px] sm:text-xs font-semibold flex items-center gap-2 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400"
                         >
-                          <Sparkles className="w-4 h-4 text-cyan-400" />
+                          <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-400" />
                           🚀 Try AreebaBot Live
                         </a>
                       )}
@@ -399,9 +399,9 @@ export default function ProjectsSection({ onOpenAiBot }) {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`Open GitHub repository for ${project.title} in a new tab`}
-                          className="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 hover:text-white font-mono text-xs flex items-center gap-2 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400"
+                          className="w-full sm:w-auto justify-center px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 hover:text-white font-mono text-[11px] sm:text-xs flex items-center gap-2 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400"
                         >
-                          <GithubIcon className="w-4 h-4 text-slate-300" />
+                          <GithubIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                           GitHub
                         </a>
                       )}
@@ -409,11 +409,11 @@ export default function ProjectsSection({ onOpenAiBot }) {
                       <button
                         type="button"
                         onClick={() => setSelectedProject(project)}
-                        className="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-xs font-medium flex items-center gap-2 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400"
+                        className="w-full sm:w-auto justify-center px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-mono text-[11px] sm:text-xs font-medium flex items-center gap-2 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400"
                       >
-                        <Terminal className="w-4 h-4 text-cyan-400" />
+                        <Terminal className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-400" />
                         Read Case Study & Code
-                        <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
+                        <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-400" />
                       </button>
                     </div>
 

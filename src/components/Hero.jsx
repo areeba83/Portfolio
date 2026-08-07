@@ -143,14 +143,15 @@ function FuturisticAiVisualizer({ mousePos }) {
   }, [mousePos, activeNode]);
 
   return (
-    <div className="relative w-full h-[560px] lg:h-[600px] flex items-center justify-center select-none">
+    <div className="relative w-full h-[450px] sm:h-[560px] lg:h-[600px] flex items-center justify-center select-none">
 
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none z-0" />
 
       {/* Floating Glass Panel 1: Live AI System Status (Top Right) */}
       <div className="absolute top-2 right-2 sm:top-6 sm:right-6 lg:top-8 lg:right-8 z-10 max-w-[calc(100%-16px)] sm:max-w-none">
-        <div
-          className="glass-panel p-3 sm:p-4 rounded-2xl border border-cyan-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
+        <div className="scale-90 sm:scale-100 origin-top-right">
+          <div
+            className="glass-panel p-3 sm:p-4 rounded-2xl border border-cyan-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
           style={{
             transform: `translate3d(${(mousePos.x - window.innerWidth / 2) * 0.012}px, ${(mousePos.y - window.innerHeight / 2) * 0.012}px, 0)`
           }}
@@ -180,11 +181,12 @@ function FuturisticAiVisualizer({ mousePos }) {
           </div>
         </div>
       </div>
-
+    </div>
       {/* Floating Glass Panel 2: Intelligent Code Pipeline (Bottom Left) */}
       <div className="absolute bottom-2 left-2 sm:bottom-6 sm:left-6 lg:bottom-8 lg:left-8 z-10 w-[calc(100%-16px)] max-w-[260px] sm:max-w-[270px]">
-        <div
-          className="glass-panel p-3 sm:p-4 rounded-2xl border border-purple-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
+        <div className="scale-90 sm:scale-100 origin-bottom-left">
+          <div
+            className="glass-panel p-3 sm:p-4 rounded-2xl border border-purple-500/25 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:scale-102"
           style={{
             transform: `translate3d(${(mousePos.x - window.innerWidth / 2) * -0.01}px, ${(mousePos.y - window.innerHeight / 2) * -0.01}px, 0)`
           }}
@@ -208,11 +210,13 @@ function FuturisticAiVisualizer({ mousePos }) {
           </div>
         </div>
       </div>
+    </div>
 
       {/* Center Interactive Core Badge */}
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[calc(100%-32px)] max-w-[230px]">
-        <div
-          className="p-4 sm:p-6 rounded-3xl bg-gradient-to-br from-[#0f172a]/90 via-[#0b0f17]/90 to-[#1e1b4b]/80 border border-white/15 shadow-2xl backdrop-blur-2xl text-center space-y-3 transition-transform duration-500 hover:border-cyan-400/40"
+        <div className="scale-90 sm:scale-100 origin-center">
+          <div
+            className="p-4 sm:p-6 rounded-3xl bg-gradient-to-br from-[#0f172a]/90 via-[#0b0f17]/90 to-[#1e1b4b]/80 border border-white/15 shadow-2xl backdrop-blur-2xl text-center space-y-3 transition-transform duration-500 hover:border-cyan-400/40"
           style={{
             transform: `translate3d(${(mousePos.x - window.innerWidth / 2) * 0.015}px, ${(mousePos.y - window.innerHeight / 2) * 0.015}px, 0)`
           }}
@@ -232,8 +236,9 @@ function FuturisticAiVisualizer({ mousePos }) {
           </div>
         </div>
       </div>
-
     </div>
+
+  </div>
   );
 }
 
@@ -302,7 +307,7 @@ export default function Hero({ _onOpenAiBot, _onOpenResume }) {
             </div>
 
             {/* Primary & Secondary Action Buttons */}
-            <div className="pt-2 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4 sm:gap-5 w-full">
+            <div className="pt-2 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-5 w-full">
               <a
                 href="#projects"
                 className="relative group inline-flex justify-center items-center gap-3 px-7 py-3.5 rounded-2xl bg-white/[0.08] hover:bg-white/[0.14] border border-white/15 text-white font-display font-semibold text-sm transition-all duration-300 hover:scale-[1.02] shadow-xl focus-visible:ring-2 focus-visible:ring-cyan-400 w-full sm:w-auto"
