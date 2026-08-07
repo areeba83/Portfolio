@@ -1,8 +1,8 @@
 export const PERSONAL_INFO = {
   name: "Areeba Amar",
   title: "Software Engineer | Applied AI & Full-Stack Development",
-  signatureTagline: "Building intelligent software that solves real-world problems through AI, automation and scalable software engineering.",
-  tagline: "Building intelligent software that solves real-world problems through AI, automation and scalable software engineering.",
+  signatureTagline: "Building AI-powered applications, scalable web solutions, and intelligent automation through practical software engineering.",
+  tagline: "Building AI-powered applications, scalable web solutions, and intelligent automation through practical software engineering.",
   location: "Lahore, Pakistan",
   email: "areeba.amar.khan@gmail.com",
   phone: "+92 335 9412907",
@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/areeba-amir-a43491271/",
   resume: "https://drive.google.com/file/d/1WH3-Ye9DegE7jUFIKS5XQv4q1VAn2QCV/view?usp=drive_link",
   status: "Open for Software Engineering & AI Roles",
-  bio: "Building intelligent software that solves real-world problems through AI, automation and scalable software engineering."
+  bio: "Building AI-powered applications, scalable web solutions, and intelligent automation through practical software engineering."
 };
 
 export const BRAND_VALUES = [
@@ -44,7 +44,8 @@ export const PROJECTS = [
       gradient: "from-cyan-500/20 via-indigo-500/15 to-purple-500/20",
       glowColor: "rgba(56, 189, 248, 0.2)",
       cardBorder: "border-cyan-500/30 hover:border-cyan-400",
-      textShimmer: "from-white via-cyan-200 to-indigo-400"
+      textShimmer: "from-white via-cyan-200 to-indigo-400",
+      glassClass: "glass-cyan-blue"
     },
     metrics: [
       { name: "Inference Latency", value: "< 350ms" },
@@ -99,7 +100,8 @@ def build_rag_pipeline(docs):
       gradient: "from-emerald-500/20 via-teal-500/15 to-cyan-500/20",
       glowColor: "rgba(16, 185, 129, 0.2)",
       cardBorder: "border-emerald-500/30 hover:border-emerald-400",
-      textShimmer: "from-white via-emerald-200 to-teal-400"
+      textShimmer: "from-white via-emerald-200 to-teal-400",
+      glassClass: "glass-indigo-cyan"
     },
     metrics: [
       { name: "Congestion Drop", value: "~25% Less Delay" },
@@ -151,7 +153,8 @@ def optimize_signal_phase(intersection_id):
       gradient: "from-fuchsia-500/20 via-purple-500/15 to-pink-500/20",
       glowColor: "rgba(217, 70, 239, 0.2)",
       cardBorder: "border-fuchsia-500/30 hover:border-fuchsia-400",
-      textShimmer: "from-white via-fuchsia-200 to-pink-400"
+      textShimmer: "from-white via-fuchsia-200 to-pink-400",
+      glassClass: "glass-emerald-green"
     },
     metrics: [
       { name: "Backend", value: "Django Python" },
@@ -260,7 +263,8 @@ module.exports = router;`
       gradient: "from-amber-500/20 via-orange-500/15 to-yellow-500/20",
       glowColor: "rgba(245, 158, 11, 0.2)",
       cardBorder: "border-amber-500/30 hover:border-amber-400",
-      textShimmer: "from-white via-amber-200 to-orange-400"
+      textShimmer: "from-white via-amber-200 to-orange-400",
+      glassClass: "glass-rose-pink"
     },
     metrics: [
       { name: "Language", value: "Java" },
@@ -313,7 +317,8 @@ module.exports = router;`
       gradient: "from-violet-500/20 via-purple-500/15 to-indigo-500/20",
       glowColor: "rgba(139, 92, 246, 0.2)",
       cardBorder: "border-violet-500/30 hover:border-violet-400",
-      textShimmer: "from-white via-violet-200 to-indigo-400"
+      textShimmer: "from-white via-violet-200 to-indigo-400",
+      glassClass: "glass-purple-violet"
     },
     metrics: [
       { name: "Domain", value: "HCI & BCI" },

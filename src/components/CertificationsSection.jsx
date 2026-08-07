@@ -21,7 +21,12 @@ export default function CertificationsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {CERTIFICATIONS.map((cert, idx) => (
             <div
-              className="glass-panel p-8 rounded-3xl relative group"
+              key={idx}
+              className={`glass-panel p-8 rounded-3xl relative group ${
+                idx === 0 ? 'glass-emerald-green' :
+                idx === 1 ? 'glass-cyan-blue' :
+                idx === 2 ? 'glass-purple-violet' : 'glass-amber-gold'
+              }`}
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="px-3 py-1 rounded-full text-xs font-mono border border-white/10 text-slate-300 bg-white/[0.03]">

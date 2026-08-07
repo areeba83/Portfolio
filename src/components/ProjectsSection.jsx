@@ -292,7 +292,7 @@ export default function ProjectsSection({ onOpenAiBot }) {
               <div
                 key={project.id}
                 id={`project-case-${project.id}`}
-                className={`glass-panel p-8 sm:p-12 rounded-3xl border ${theme.cardBorder} transition-all duration-500 shadow-2xl relative group overflow-hidden bg-gradient-to-br ${theme.gradient}`}
+                className={`glass-panel ${theme.glassClass || ''} p-8 sm:p-12 rounded-3xl border ${theme.cardBorder} transition-all duration-500 shadow-2xl relative group overflow-hidden`}
               >
                 <div
                   className="absolute inset-0 pointer-events-none opacity-15 group-hover:opacity-25 transition-opacity duration-700"

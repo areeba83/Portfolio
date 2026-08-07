@@ -69,7 +69,7 @@ export default function Footer({ onOpenAiBot }) {
             <LinkedinIcon className="w-3.5 h-3.5" /> LinkedIn
           </a>
           <span>•</span>
-          <span>Designed with Precision</span>
+          <span>Designed & Developed by Areeba Amir</span>
         </div>
 
       </div>

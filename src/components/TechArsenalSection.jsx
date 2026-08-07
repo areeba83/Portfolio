@@ -7,6 +7,19 @@ export default function TechArsenalSection() {
 
   const currentCategory = SKILLS_CATEGORIES.find(c => c.id === activeTab) || SKILLS_CATEGORIES[0];
 
+  const getCardGlassClass = (tabId, idx) => {
+    if (tabId === 'ai-ml') {
+      return idx % 2 === 0 ? 'glass-purple-violet' : 'glass-cyan-blue';
+    }
+    if (tabId === 'fullstack') {
+      return idx % 2 === 0 ? 'glass-indigo-cyan' : 'glass-panel';
+    }
+    if (tabId === 'qa-testing') {
+      return idx % 2 === 0 ? 'glass-rose-pink' : 'glass-panel';
+    }
+    return idx % 2 === 0 ? 'glass-emerald-green' : 'glass-amber-gold';
+  };
+
   return (
     <section id="skills" className="py-32 relative z-10 select-none">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
@@ -35,7 +48,11 @@ export default function TechArsenalSection() {
               onClick={() => setActiveTab(cat.id)}
               className={`p-5 rounded-2xl border text-left transition-all duration-400 focus-visible:ring-2 focus-visible:ring-cyan-400 ${
                 activeTab === cat.id
-                  ? 'bg-white/[0.06] border-white/20 text-white shadow-xl'
+                  ? `glass-panel text-white shadow-xl ${
+                      cat.id === 'ai-ml' ? 'glass-purple-violet' :
+                      cat.id === 'fullstack' ? 'glass-cyan-blue' :
+                      cat.id === 'qa-testing' ? 'glass-rose-pink' : 'glass-emerald-green'
+                    }`
                   : 'bg-[#0b0f17]/60 border-white/[0.05] text-slate-400 hover:text-white hover:bg-white/[0.02]'
               }`}
             >
@@ -61,7 +78,7 @@ export default function TechArsenalSection() {
             {currentCategory.skills.map((skill, idx) => (
               <div
                 key={idx}
-                className="bg-[#030712]/70 border border-white/[0.06] hover:border-white/20 p-5 rounded-2xl transition-all duration-300"
+                className={`glass-panel ${getCardGlassClass(activeTab, idx)} p-5 rounded-2xl transition-all duration-300 group`}
               >
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-display font-semibold text-slate-200 text-sm">

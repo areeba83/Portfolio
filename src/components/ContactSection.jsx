@@ -2,13 +2,10 @@ import React, { useState } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { Mail, Phone, MapPin, Copy, Check, Send, Sparkles, ArrowUpRight } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
-import confetti from 'canvas-confetti';
 
 export default function ContactSection({ _onOpenAiBot }) {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
 
   const copyToClipboard = (text, type) => {
     navigator.clipboard.writeText(text);
@@ -21,21 +18,7 @@ export default function ContactSection({ _onOpenAiBot }) {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!formData.email || !formData.message) return;
 
-    confetti({
-      particleCount: 60,
-      spread: 60,
-      origin: { y: 0.6 }
-    });
-
-    setSubmitted(true);
-    setTimeout(() => {
-      window.location.href = `mailto:${PERSONAL_INFO.email}?subject=Portfolio Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(formData.message)}`;
-    }, 1200);
-  };
 
   return (
     <section id="contact" className="py-32 relative z-10 border-t border-white/[0.08] select-none">
@@ -50,17 +33,17 @@ export default function ContactSection({ _onOpenAiBot }) {
             Let's Connect.
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Open for <strong className="text-cyan-400">Software Engineering & AI Roles</strong>. Feel free to reach out directly via email or phone.
+            I'm always open to discussing internships, AI projects, software engineering opportunities, and collaborations.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           {/* Quick Contact & Social Cards */}
-          <div className="lg:col-span-5 space-y-4">
+          <div className="lg:col-span-5 flex flex-col justify-between h-full gap-4">
             
             {/* Email Card */}
-            <div className="glass-panel p-6 rounded-2xl border border-white/10 flex items-center justify-between group">
+            <div className="glass-panel glass-cyan-blue p-6 rounded-2xl border border-white/10 flex items-center justify-between group">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center text-cyan-400">
                   <Mail className="w-4 h-4" />
@@ -88,7 +71,7 @@ export default function ContactSection({ _onOpenAiBot }) {
             </div>
 
             {/* Phone Card */}
-            <div className="glass-panel p-6 rounded-2xl border border-white/10 flex items-center justify-between group">
+            <div className="glass-panel glass-purple-violet p-6 rounded-2xl border border-white/10 flex items-center justify-between group">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center text-indigo-400">
                   <Phone className="w-4 h-4" />
@@ -113,9 +96,9 @@ export default function ContactSection({ _onOpenAiBot }) {
             </div>
 
             {/* Location & Links */}
-            <div className="glass-panel p-6 rounded-2xl border border-white/10 space-y-4">
+            <div className="glass-panel glass-emerald-green p-6 rounded-2xl border border-white/10 space-y-4">
               <div className="flex items-center gap-3 text-xs font-mono text-slate-300">
-                <MapPin className="w-4 h-4 text-purple-400" />
+                <MapPin className="w-4 h-4 text-emerald-400" />
                 <span>{PERSONAL_INFO.location}</span>
               </div>
 
@@ -148,70 +131,62 @@ export default function ContactSection({ _onOpenAiBot }) {
 
           </div>
 
-          {/* Interactive Form */}
-          <div className="lg:col-span-7">
-            <div className="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 relative overflow-hidden">
-              {submitted ? (
-                <div className="py-12 text-center space-y-4">
-                  <div className="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
-                    <Check className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-2xl font-display font-bold text-white">Message Prepared!</h3>
-                  <p className="text-slate-300 text-sm max-w-md mx-auto">
-                    Opening your default email client to send message to <strong>{PERSONAL_INFO.email}</strong>.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div>
-                      <label htmlFor="contact-name" className="block text-xs font-mono text-slate-400 mb-2">Your Name</label>
-                      <input
-                        id="contact-name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="e.g. Technical Recruiter"
-                        className="w-full bg-[#030712] border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-all font-sans"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="contact-email" className="block text-xs font-mono text-slate-400 mb-2">Email Address</label>
-                      <input
-                        id="contact-email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="recruiter@company.com"
-                        className="w-full bg-[#030712] border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-all font-sans"
-                      />
-                    </div>
-                  </div>
+          {/* Static Contact CTA */}
+          <div className="lg:col-span-7 h-full">
+            <div className="glass-panel glass-premium-cta p-8 sm:p-10 rounded-3xl border border-white/10 relative overflow-hidden flex flex-col items-center justify-center text-center h-full">
+              
+              <div className="w-16 h-16 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-center text-violet-400 mb-6 shadow-xl">
+                <Send className="w-8 h-8 -ml-1 mt-1" />
+              </div>
+              
+              <h3 className="text-3xl sm:text-4xl font-display font-extrabold text-white mb-4">
+                Let's Build Something Together
+              </h3>
+              
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-md mb-10">
+                I'm always open to discussing internships, AI projects, software engineering opportunities, and collaborations.
+              </p>
+              
+              <div className="flex flex-wrap items-center justify-center gap-4 w-full">
+                <a
+                  href={`mailto:${PERSONAL_INFO.email}`}
+                  className="px-6 py-3.5 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/30 text-cyan-300 font-mono text-sm font-semibold flex items-center gap-2.5 transition-all focus-visible:ring-2 focus-visible:ring-cyan-400 shadow-lg hover:-translate-y-0.5"
+                >
+                  <Mail className="w-4 h-4" />
+                  Email Me
+                </a>
+                
+                <a
+                  href={PERSONAL_INFO.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-mono text-sm font-semibold flex items-center gap-2.5 transition-all focus-visible:ring-2 focus-visible:ring-white/50 hover:-translate-y-0.5"
+                >
+                  <LinkedinIcon className="w-4 h-4" />
+                  LinkedIn
+                </a>
 
-                  <div>
-                    <label htmlFor="contact-message" className="block text-xs font-mono text-slate-400 mb-2">Message / Inquiry</label>
-                    <textarea
-                      id="contact-message"
-                      rows={4}
-                      required
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Hi Areeba, we are impressed by your RAG and AI Traffic projects. Let's schedule an interview..."
-                      className="w-full bg-[#030712] border border-white/10 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 rounded-xl p-4 text-sm text-white focus:outline-none transition-all font-sans"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full py-4 rounded-xl bg-white/[0.08] hover:bg-white/[0.14] border border-white/15 text-white font-display font-semibold text-sm transition-all flex items-center justify-center gap-2 group focus-visible:ring-2 focus-visible:ring-cyan-400"
-                  >
-                    <span>Send Message to Areeba</span>
-                    <Send className="w-4 h-4 text-cyan-400 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </form>
-              )}
+                <a
+                  href={PERSONAL_INFO.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-mono text-sm font-semibold flex items-center gap-2.5 transition-all focus-visible:ring-2 focus-visible:ring-white/50 hover:-translate-y-0.5"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  GitHub
+                </a>
+                
+                <a
+                  href={PERSONAL_INFO.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-mono text-sm font-semibold flex items-center gap-2.5 transition-all focus-visible:ring-2 focus-visible:ring-white/50 hover:-translate-y-0.5"
+                >
+                  <ArrowUpRight className="w-4 h-4" />
+                  Download Resume
+                </a>
+              </div>
+              
             </div>
           </div>
 

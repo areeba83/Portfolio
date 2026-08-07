@@ -40,7 +40,7 @@ export default function ArchitectureDiagram() {
   ];
 
   return (
-    <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10 relative overflow-hidden">
+    <div className="glass-panel glass-cyan-blue p-6 sm:p-8 rounded-3xl border border-white/10 relative overflow-hidden">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/10">
         <div>
           <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 mb-1">

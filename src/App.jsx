@@ -1,5 +1,6 @@
 import React, { useState, lazy, Suspense } from 'react';
 import BackgroundCanvas from './components/BackgroundCanvas';
+import StarBackground from './components/StarBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectsSection from './components/ProjectsSection';
@@ -20,6 +21,9 @@ export default function App() {
     <div className="relative min-h-screen bg-[#030712] text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200 overflow-x-hidden font-sans">
       {/* Background Interactive Mesh & Particle Shader */}
       <BackgroundCanvas />
+
+      {/* Global CSS Starfield Layer (Scrolls naturally with the page, interactive mouse parallax) */}
+      <StarBackground />
 
       {/* Global Navigation Header */}
       <Navbar

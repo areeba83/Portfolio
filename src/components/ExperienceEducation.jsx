@@ -97,7 +97,11 @@ export default function ExperienceEducation() {
             {academicProjects.map((proj, idx) => (
               <div
                 key={idx}
-                className="bg-[#0b0f17]/70 border border-white/[0.06] hover:border-white/20 p-5 rounded-2xl transition-all duration-300"
+                className={`glass-panel p-5 rounded-2xl transition-all duration-300 ${
+                  idx === 0 ? 'glass-amber-gold' : 
+                  idx === 1 ? 'glass-purple-violet' : 
+                  idx === 2 ? 'glass-emerald-green' : 'glass-cyan-blue'
+                }`}
               >
                 <div className="flex items-center justify-between mb-1">
                   <h4 className="font-display font-bold text-white text-sm">{proj.title}</h4>
