@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   phone: "+92 335 9412907",
   github: "https://github.com/areeba83",
   linkedin: "https://www.linkedin.com/in/areeba-amar-a43491271/",
-  resume: "https://drive.google.com/file/d/1WH3-Ye9DegE7jUFIKS5XQv4q1VAn2QCV/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1yz8gPTrOazLPOjYQpeEDAJwkQUVbBqRf/view?usp=sharing",
   status: "Open for Software Engineering & AI Roles",
   bio: "Building AI-powered applications, scalable web solutions, and intelligent automation through practical software engineering."
 };
@@ -467,7 +467,7 @@ export const AI_BOT_FAQS = [
   },
   {
     keywords: ["experience", "internship", "background", "student", "umt", "education"],
-    response: "I am a 7th semester BS Software Engineering student at University of Management and Technology (UMT) Lahore. I focus on building practical AI systems and reliable full-stack software. I hold an NAVTTC Grade A+ Full-Stack Certification and am actively seeking a Summer 2026 AI / Software Engineering Role."
+    response: "I am an 8th semester BS Software Engineering student at University of Management and Technology (UMT) Lahore. I focus on building practical AI systems and reliable full-stack software. I hold an NAVTTC Grade A+ Full-Stack Certification and am actively seeking a Summer 2026 AI / Software Engineering Role."
   },
   {
     keywords: ["skills", "tech", "languages", "python", "javascript", "react", "testing"],

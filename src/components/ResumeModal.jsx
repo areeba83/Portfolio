@@ -94,7 +94,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               Profile Summary
             </h3>
             <p className="text-sm text-slate-300 leading-relaxed bg-[#030712] p-4 rounded-2xl border border-white/5">
-              Software Engineering undergraduate (7th semester, UMT Lahore) with hands-on experience across full-stack development, test automation, and applied AI/NLP. Shipped a production RAG chatbot, a fully-automated Selenium test suite, and multiple deep learning models. Currently building an AI-driven traffic signal optimization system as a final year project. NAVTTC-certified MERN stack developer (A+) and selected candidate for the Microsoft International Certification exam. Looking for a Summer 2026 internship to contribute to a real engineering team and keep building things that ship.
+              Software Engineering undergraduate (8th semester, UMT Lahore) with hands-on experience across full-stack development, test automation, and applied AI/NLP. Shipped a production RAG chatbot, a fully-automated Selenium test suite, and multiple deep learning models. Currently building an AI-driven traffic signal optimization system as a final year project. NAVTTC-certified MERN stack developer (A+) and selected candidate for the Microsoft International Certification exam. Looking for a Summer 2026 internship to contribute to a real engineering team and keep building things that ship.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               <div className="bg-[#111827] p-4 rounded-2xl border border-white/5">
                 <h4 className="font-display font-bold text-white text-sm">BS Software Engineering</h4>
                 <p className="text-xs text-cyan-400">UMT Lahore (2023 – 2027)</p>
-                <p className="text-xs text-slate-400 mt-2">Currently in 7th Semester</p>
+                <p className="text-xs text-slate-400 mt-2">Currently in 8th Semester</p>
               </div>
             </div>
 

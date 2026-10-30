@@ -158,7 +158,7 @@ export default function Navbar({ onOpenAiBot, _onOpenResume }) {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1WH3-Ye9DegE7jUFIKS5XQv4q1VAn2QCV/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1yz8gPTrOazLPOjYQpeEDAJwkQUVbBqRf/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download Resume"
@@ -217,7 +217,7 @@ export default function Navbar({ onOpenAiBot, _onOpenResume }) {
                   🚀 Try AreebaBot Live
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1WH3-Ye9DegE7jUFIKS5XQv4q1VAn2QCV/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1yz8gPTrOazLPOjYQpeEDAJwkQUVbBqRf/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Download Resume"

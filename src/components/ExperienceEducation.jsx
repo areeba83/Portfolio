@@ -57,6 +57,9 @@ export default function ExperienceEducation() {
               <p className="text-sm font-semibold text-cyan-400 mt-1">
                 University of Management and Technology (UMT)
               </p>
+              <p className="text-xs text-slate-400 mt-1">
+                Currently in Semester 8
+              </p>
             </div>
 
             <p className="text-sm text-slate-300 leading-relaxed">
