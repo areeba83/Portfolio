@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   email: "areeba.amar.khan@gmail.com",
   phone: "+92 335 9412907",
   github: "https://github.com/areeba83",
-  linkedin: "https://linkedin.com/in/areeba-amir-a43491271/",
+  linkedin: "https://www.linkedin.com/in/areeba-amar-a43491271/",
   resume: "https://drive.google.com/file/d/1WH3-Ye9DegE7jUFIKS5XQv4q1VAn2QCV/view?usp=drive_link",
   status: "Open for Software Engineering & AI Roles",
   bio: "Building AI-powered applications, scalable web solutions, and intelligent automation through practical software engineering."

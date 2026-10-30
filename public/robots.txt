@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://areebaamar.dev/sitemap.xml
+Sitemap: https://portfolio-mu-livid-44.vercel.app/sitemap.xml
